@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_af3cd960b16d08d6dcc263ba67bdda2a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+</head>
+<body>
+
+
+            <div class="folium-map" id="map_af3cd960b16d08d6dcc263ba67bdda2a" ></div>
+
+</body>
+<script>
+
+
+            var map_af3cd960b16d08d6dcc263ba67bdda2a = L.map(
+                "map_af3cd960b16d08d6dcc263ba67bdda2a",
+                {
+                    center: [40.7128, -74.006],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+
+
+
+
+            var tile_layer_2bec825b1c70579483063ec76e26d2d7 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+
+
+            tile_layer_2bec825b1c70579483063ec76e26d2d7.addTo(map_af3cd960b16d08d6dcc263ba67bdda2a);
+
+
+            var marker_9a765efb14e86a930ab31b200efd9b42 = L.marker(
+                [40.7127281, -74.0060152],
+                {
+}
+            ).addTo(map_af3cd960b16d08d6dcc263ba67bdda2a);
+
+
+        var popup_ccf1eb29d58bcbb84c73c940706d2550 = L.popup({
+  "maxWidth": "100%",
+});
+
+
+
+                var html_0a1efc191009578bbd681e01f0f4d128 = $(`<div id="html_0a1efc191009578bbd681e01f0f4d128" style="width: 100.0%; height: 100.0%;">City: New York City, Combined Score: 182375.6414246229, Sales: 256368.161</div>`)[0];
+                popup_ccf1eb29d58bcbb84c73c940706d2550.setContent(html_0a1efc191009578bbd681e01f0f4d128);
+
+
+
+        marker_9a765efb14e86a930ab31b200efd9b42.bindPopup(popup_ccf1eb29d58bcbb84c73c940706d2550)
+        ;
+
+
+
+
+            var marker_d6929a3a715d368ca38044511c512272 = L.marker(
+                [34.0536909, -118.242766],
+                {
+}
+            ).addTo(map_af3cd960b16d08d6dcc263ba67bdda2a);
+
+
+        var popup_518680873bc9da08ac1eb000b0a99c18 = L.popup({
+  "maxWidth": "100%",
+});
+
+
+
+                var html_fa47c097c972adae20fa3163f6350c78 = $(`<div id="html_fa47c097c972adae20fa3163f6350c78" style="width: 100.0%; height: 100.0%;">City: Los Angeles, Combined Score: 125843.02558634538, Sales: 175851.34100000001</div>`)[0];
+                popup_518680873bc9da08ac1eb000b0a99c18.setContent(html_fa47c097c972adae20fa3163f6350c78);
+
+
+
+        marker_d6929a3a715d368ca38044511c512272.bindPopup(popup_518680873bc9da08ac1eb000b0a99c18)
+        ;
+
+
+
+
+            var marker_6185d99056bf3965fe35ca9126d29848 = L.marker(
+                [47.6038321, -122.330062],
+                {
+}
+            ).addTo(map_af3cd960b16d08d6dcc263ba67bdda2a);
+
+
+        var popup_52b911def55c1e8d519961614b4dafd6 = L.popup({
+  "maxWidth": "100%",
+});
+
+
+
+                var html_b63ef9e1a1296e6b70e00da26b8896e0 = $(`<div id="html_b63ef9e1a1296e6b70e00da26b8896e0" style="width: 100.0%; height: 100.0%;">City: Seattle, Combined Score: 87183.23867292055, Sales: 119540.742</div>`)[0];
+                popup_52b911def55c1e8d519961614b4dafd6.setContent(html_b63ef9e1a1296e6b70e00da26b8896e0);
+
+
+
+        marker_6185d99056bf3965fe35ca9126d29848.bindPopup(popup_52b911def55c1e8d519961614b4dafd6)
+        ;
+
+
+
+
+            var marker_97d9f62fad0a4643aac2fc7eee6e212c = L.marker(
+                [37.7792588, -122.4193286],
+                {
+}
+            ).addTo(map_af3cd960b16d08d6dcc263ba67bdda2a);
+
+
+        var popup_5a5a5cb44f29137507eb40c5be4b4d09 = L.popup({
+  "maxWidth": "100%",
+});
+
+
+
+                var html_f664918cc2276a189aa32aeb7efe6eb4 = $(`<div id="html_f664918cc2276a189aa32aeb7efe6eb4" style="width: 100.0%; height: 100.0%;">City: San Francisco, Combined Score: 80939.66784594116, Sales: 112669.092</div>`)[0];
+                popup_5a5a5cb44f29137507eb40c5be4b4d09.setContent(html_f664918cc2276a189aa32aeb7efe6eb4);
+
+
+
+        marker_97d9f62fad0a4643aac2fc7eee6e212c.bindPopup(popup_5a5a5cb44f29137507eb40c5be4b4d09)
+        ;
+
+
+
+
+            var marker_29e104e229b008d636c63c15e6da613e = L.marker(
+                [39.9527237, -75.1635262],
+                {
+}
+            ).addTo(map_af3cd960b16d08d6dcc263ba67bdda2a);
+
+
+        var popup_ed51e8cc039cf1dc92af016c13a310ab = L.popup({
+  "maxWidth": "100%",
+});
+
+
+
+                var html_dbb54a9062e2e83ca029345c0c0c847d = $(`<div id="html_dbb54a9062e2e83ca029345c0c0c847d" style="width: 100.0%; height: 100.0%;">City: Philadelphia, Combined Score: 77730.51635094972, Sales: 109077.013</div>`)[0];
+                popup_ed51e8cc039cf1dc92af016c13a310ab.setContent(html_dbb54a9062e2e83ca029345c0c0c847d);
+
+
+
+        marker_29e104e229b008d636c63c15e6da613e.bindPopup(popup_ed51e8cc039cf1dc92af016c13a310ab)
+        ;
+
+
+
+
+            var marker_62d2aeb92ec77dcd8084a2a8c3b88dda = L.marker(
+                [29.7589382, -95.3676974],
+                {
+}
+            ).addTo(map_af3cd960b16d08d6dcc263ba67bdda2a);
+
+
+        var popup_e1563572826ff2607a8aa9cd1ee39618 = L.popup({
+  "maxWidth": "100%",
+});
+
+
+
+                var html_55c19ee724649d0e46ac35dff60cd821 = $(`<div id="html_55c19ee724649d0e46ac35dff60cd821" style="width: 100.0%; height: 100.0%;">City: Houston, Combined Score: 47845.8247301061, Sales: 64504.7604</div>`)[0];
+                popup_e1563572826ff2607a8aa9cd1ee39618.setContent(html_55c19ee724649d0e46ac35dff60cd821);
+
+
+
+        marker_62d2aeb92ec77dcd8084a2a8c3b88dda.bindPopup(popup_e1563572826ff2607a8aa9cd1ee39618)
+        ;
+
+
+
+
+            var marker_8d990b01f1ec0f3ac810bd5485c459c7 = L.marker(
+                [51.3878174, 1.3819699],
+                {
+}
+            ).addTo(map_af3cd960b16d08d6dcc263ba67bdda2a);
+
+
+        var popup_c94f80531d67f92c1418ccf7580e11a1 = L.popup({
+  "maxWidth": "100%",
+});
+
+
+
+                var html_b7f45c5226bd35314585bfac94871d6b = $(`<div id="html_b7f45c5226bd35314585bfac94871d6b" style="width: 100.0%; height: 100.0%;">City: Margate, Combined Score: 38009.80494, Sales: 15.552000000000003</div>`)[0];
+                popup_c94f80531d67f92c1418ccf7580e11a1.setContent(html_b7f45c5226bd35314585bfac94871d6b);
+
+
+
+        marker_8d990b01f1ec0f3ac810bd5485c459c7.bindPopup(popup_c94f80531d67f92c1418ccf7580e11a1)
+        ;
+
+
+
+
+            var marker_df7b7471a2debce68556b7e781b75cf0 = L.marker(
+                [41.8755616, -87.6244212],
+                {
+}
+            ).addTo(map_af3cd960b16d08d6dcc263ba67bdda2a);
+
+
+        var popup_4edc97af6f5f652e36c81c4b5c867df0 = L.popup({
+  "maxWidth": "100%",
+});
+
+
+
+                var html_1ee1f70b511e0be6b00ce9dcba7d553c = $(`<div id="html_1ee1f70b511e0be6b00ce9dcba7d553c" style="width: 100.0%; height: 100.0%;">City: Chicago, Combined Score: 36217.617928375796, Sales: 48539.541</div>`)[0];
+                popup_4edc97af6f5f652e36c81c4b5c867df0.setContent(html_1ee1f70b511e0be6b00ce9dcba7d553c);
+
+
+
+        marker_df7b7471a2debce68556b7e781b75cf0.bindPopup(popup_4edc97af6f5f652e36c81c4b5c867df0)
+        ;
+
+
+
+
+            var marker_37327f2ef47ff029a0530a0f46ecd29f = L.marker(
+                [32.7174202, -117.162772],
+                {
+}
+            ).addTo(map_af3cd960b16d08d6dcc263ba67bdda2a);
+
+
+        var popup_f7d5991b6f3a18bf86b2511981e3c465 = L.popup({
+  "maxWidth": "100%",
+});
+
+
+
+                var html_be9ffd8d9731cbc1d19d9ca306c8fff0 = $(`<div id="html_be9ffd8d9731cbc1d19d9ca306c8fff0" style="width: 100.0%; height: 100.0%;">City: San Diego, Combined Score: 35740.50553305882, Sales: 47521.029</div>`)[0];
+                popup_f7d5991b6f3a18bf86b2511981e3c465.setContent(html_be9ffd8d9731cbc1d19d9ca306c8fff0);
+
+
+
+        marker_37327f2ef47ff029a0530a0f46ecd29f.bindPopup(popup_f7d5991b6f3a18bf86b2511981e3c465)
+        ;
+
+
+
+
+            var marker_56bac8f296ac5bb660f61b9c60ac1e9a = L.marker(
+                [42.3315509, -83.0466403],
+                {
+}
+            ).addTo(map_af3cd960b16d08d6dcc263ba67bdda2a);
+
+
+        var popup_3adc53260c834e0385d562f3c142fdb0 = L.popup({
+  "maxWidth": "100%",
+});
+
+
+
+                var html_4c32c6b14c509000478bbf451119f22a = $(`<div id="html_4c32c6b14c509000478bbf451119f22a" style="width: 100.0%; height: 100.0%;">City: Detroit, Combined Score: 33391.885280956514, Sales: 42446.943999999996</div>`)[0];
+                popup_3adc53260c834e0385d562f3c142fdb0.setContent(html_4c32c6b14c509000478bbf451119f22a);
+
+
+
+        marker_56bac8f296ac5bb660f61b9c60ac1e9a.bindPopup(popup_3adc53260c834e0385d562f3c142fdb0)
+        ;
+
+
+
+</script>
+</html>
