@@ -1,6 +1,6 @@
 import streamlit as st
 import plotly.express as px
-from PIL import image
+from PIL import Image
 st.title("Interactive Dashboard")
 st.header("Maps")
 col1, col2 = st.columns(2)
