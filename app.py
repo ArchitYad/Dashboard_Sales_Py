@@ -1,5 +1,6 @@
 import streamlit as st
 import plotly.express as px
+from PIL import image
 st.title("Interactive Dashboard")
 st.header("Maps")
 col1, col2 = st.columns(2)
@@ -18,6 +19,9 @@ st.header("Product vs Sales vs Store City Chart")
 with open("s.html", "r") as f:
         s = f.read()
 st.components.v1.html(s, height=600)
+st.header("Market Strategies")
+image=Image.open('segmentst.png')
+st.image(image, caption='K-Mean Cluster Based on Customer Buying Behaviour')
 st.header("Sales Chart")
 with open("s2.html", "r") as f:
      s2= f.read()
