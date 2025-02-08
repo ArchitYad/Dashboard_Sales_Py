@@ -19,6 +19,10 @@ st.header("Product vs Sales vs Store City Chart")
 with open("s.html", "r") as f:
         s = f.read()
 st.components.v1.html(s, height=600)
+st.header("Product vs Year vs Quantity (Popularity of Product)")
+with open("product.html", "r") as f:
+        product = f.read()
+st.components.v1.html(product, height=600)
 st.header("Market Strategies")
 image=Image.open('segmentst.png')
 st.image(image, caption='K-Mean Cluster Based on Customer Buying Behaviour')
